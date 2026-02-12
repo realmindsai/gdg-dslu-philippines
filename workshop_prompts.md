@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 backgroundColor: #0F1229
-color: #C5D0E6
+color: #E8E8EC
 style: |
   section {
     font-family: 'Calibri', 'Segoe UI', sans-serif;
@@ -34,7 +34,7 @@ style: |
   }
   pre code {
     background: transparent;
-    color: #C5D0E6;
+    color: #E8E8EC;
   }
   .exercise-num {
     display: inline-block;
@@ -68,27 +68,49 @@ Copy-paste ready CLI prompts for every exercise
 
 ---
 
-# Setup
+# Get the Workshop Prompts
 
-## Install Gemini CLI
+## Scan to open on your phone
 
-```bash
-npm install -g @anthropic-ai/gemini-cli
-# or
-curl -fsSL https://gemini.google/install.sh | bash
-```
+![w:300 center](qr_code.png)
 
-## Install Claude Code (optional, for Exercise 2)
+**realmindsai.github.io/gdg-dslu-philippines**
 
-```bash
-npm install -g @anthropic-ai/claude-code
-```
+All exercises, prompts, and hackathon options in one place.
+Browse on your phone while you code on your laptop.
 
-## Verify
+---
 
-```bash
-gemini --version
-```
+# Setup (1/2) - Package Managers
+
+You need **one** package manager for each language.
+
+## Python: uv (Recommended)
+
+Install: **https://docs.astral.sh/uv/getting-started/installation/**
+
+Verify: `uv --version`
+
+## JavaScript: Bun (Recommended)
+
+Install: **https://bun.sh/**
+
+Verify: `bun --version`
+
+---
+
+# Setup (2/2) - AI Coding Tools
+
+Install **at least one**. Subscription access works for all of these.
+
+| Tool | Install Page |
+|------|-------------|
+| **Gemini CLI** (primary) | https://github.com/google-gemini/gemini-cli |
+| **Antigravity IDE** | https://antigravity.google/ |
+| **Claude Code** | https://docs.anthropic.com/en/docs/claude-code |
+| **Codex CLI** | https://github.com/openai/codex |
+
+Verify: `gemini --version`
 
 ---
 
@@ -162,7 +184,7 @@ for a barangay captain."
 ### Download the broken app:
 
 ```bash
-curl -O [url]/broken_app.py
+curl -O https://raw.githubusercontent.com/realmindsai/gdg-dslu-philippines/main/broken_app.py
 python3 broken_app.py
 ```
 

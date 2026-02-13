@@ -40,24 +40,29 @@ style: |
     color: #E8E8EC !important;
   }
   table {
-    background: #1a1e38;
-    color: #E8E8EC;
-    border-collapse: collapse;
+    background: #1a1e38 !important;
+    color: #E8E8EC !important;
+    border-collapse: collapse !important;
     width: 100%;
   }
   th {
-    background: #E76F51;
-    color: white;
-    padding: 10px 16px;
+    background: #E76F51 !important;
+    color: white !important;
+    padding: 10px 16px !important;
     text-align: left;
+    border: none !important;
   }
   td {
-    padding: 10px 16px;
-    border-bottom: 1px solid #2a2e48;
-    color: #E8E8EC;
+    padding: 10px 16px !important;
+    border-bottom: 1px solid #2a2e48 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: #E8E8EC !important;
+    background: #1a1e38 !important;
   }
-  tr:nth-child(even) {
-    background: #151935;
+  tr:nth-child(even) td {
+    background: #151935 !important;
   }
   .exercise-num {
     display: inline-block;
@@ -124,46 +129,7 @@ Verify: `gemini --version`
 
 ---
 
-# <span class="exercise-num">1</span> AI Market Research Sprint
-
-**Segment: The Code Was Already Your Enemy**
-
-Pick a local app idea, then run:
-
-```bash
-gemini "Generate 10 interview questions to validate demand
-for [your app]. Include 3 questions about willingness to
-pay. Format as a survey."
-```
-
-**App ideas:** jeepney route finder, sari-sari tracker, barangay complaints
-
-**Your job:** Edit the output to add local context Gemini missed.
-
----
-
-# <span class="exercise-num">2</span> Scaffold Showdown
-
-**Segment: Operators vs. Engineers**
-
-### The operator way:
-
-```bash
-gemini "Create a React app with Tailwind for a campus food tracker"
-```
-
-### The engineer way:
-
-```bash
-gemini "Build a campus food tracker. Students check what canteens
-are open. Staff update menus daily. Use whatever stack makes sense."
-```
-
-**Compare:** What did Gemini choose vs. what you prescribed?
-
----
-
-# <span class="exercise-num">3</span> Task vs. Outcome Live Build
+# <span class="exercise-num">1</span> Task vs. Outcome Live Build
 
 **Segment: Outcome-Based Prompting**
 
@@ -187,7 +153,7 @@ for a barangay captain."
 
 ---
 
-# <span class="exercise-num">4</span> Debug Like Pike
+# <span class="exercise-num">2</span> Debug Like Pike
 
 **Segment: Direct the AI**
 
@@ -214,28 +180,7 @@ the bottleneck first, then fix only that." < broken_app.py
 
 ---
 
-# <span class="exercise-num">5</span> Build a Test Harness
-
-**Segment: Feedback Loops**
-
-```bash
-gemini "Write a Python function that calculates jeepney fare:
-13 pesos minimum for first 4km, then 1.80/km after.
-Include a CLI test harness that takes distance as input
-and prints expected vs actual fare.
-Add edge cases: 0km, negative, exactly 4km, 100km."
-```
-
-### When a test fails, feed it back:
-
-```bash
-gemini "The fare function returns [X] for 0km but should
-return [Y]. Fix it and re-run all tests."
-```
-
----
-
-# <span class="exercise-num">6</span> Spec-Driven Build
+# <span class="exercise-num">3</span> Spec-Driven Build
 
 **Segment: Software Factory**
 
@@ -258,7 +203,7 @@ Do not deviate." < my_spec.md
 
 ---
 
-# <span class="exercise-num">7</span> Build a Custom Agent
+# <span class="exercise-num">4</span> Build a Custom Agent
 
 **Segment: Agent Orchestration**
 
@@ -281,29 +226,7 @@ Give it an out-of-scope task. Add a "never do" rule. Retry.
 
 ---
 
-# <span class="exercise-num">8</span> Build the Agent Layer
-
-**Segment: Three Layers of a Tech Business**
-
-```bash
-gemini "Build a CLI tool that queries a university student
-database - enrollment status, grades, financial holds.
-Use SQLite with 20 sample Filipino students.
-Skip the dashboard - direct CLI access."
-```
-
-### Try it:
-
-```
-> Is Juan dela Cruz enrolled?
-> What's Maria Santos' GPA?
-```
-
-You just replaced a dashboard with an agent.
-
----
-
-# <span class="exercise-num">9</span> Cross the Divide
+# <span class="exercise-num">5</span> Cross the Divide
 
 **Segment: The Capability Overhang**
 
@@ -323,32 +246,13 @@ Use peso sign for currency."
 
 ---
 
-# <span class="exercise-num">10</span> Your 30-Day CLI Challenge
-
-**Segment: Your Career From Here**
-
-```bash
-gemini "Design a 30-day learning plan for a Filipino CS
-graduate entering [industry]. Each week should have one
-project buildable with Gemini CLI. Include specific
-Philippine context - companies, regulations, pain points."
-```
-
-### Then start right now:
-
-```bash
-gemini "Build [Week 1 project description]"
-```
-
-**Industries:** BPO, fintech, healthcare, agriculture, media, education, logistics
-
----
-
 <!-- _class: title-slide -->
 
 # Mini Hackathon Projects
 
-**Choose one and build it in 45 minutes**
+**4:00 PM — Choose one and build it in 45 minutes**
+
+Review these options during the break. Come back with a team and a pick.
 
 ---
 
@@ -436,7 +340,6 @@ to demo in 5 minutes."
 - **Test outcomes**, not code
 - **Add local knowledge** the AI doesn't have
 
-**WiFi:** GDG-Workshop
 **Help:** Raise your hand, mentors are circulating
 
 ---
@@ -447,5 +350,29 @@ to demo in 5 minutes."
 
 ## Your value is in everything code can't do.
 
-Dr Dennis Wollersheim | Real Minds AI
 14 February 2026
+
+---
+
+# Connect With Us
+
+**Dr Dennis Wollersheim** — Co-Founder & CTO
+linkedin.com/in/dennis-wollersheim
+
+**Tracy Anthony** — Co-Founder & CEO
+linkedin.com/in/tracyanthony
+
+**Real Minds AI** | wisdom, amplified
+realmindsai.au
+
+---
+
+# Enjoyed Today?
+
+## Leave us a Google review
+
+![w:300](qr_google_review.png)
+
+Scan to leave a review — it really helps us bring workshops like this to more communities.
+
+**★ ★ ★ ★ ★**

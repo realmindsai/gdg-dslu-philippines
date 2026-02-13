@@ -34,7 +34,30 @@ style: |
   }
   pre code {
     background: transparent;
+    color: #E8E8EC !important;
+  }
+  pre code span {
+    color: #E8E8EC !important;
+  }
+  table {
+    background: #1a1e38;
     color: #E8E8EC;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    background: #E76F51;
+    color: white;
+    padding: 10px 16px;
+    text-align: left;
+  }
+  td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #2a2e48;
+    color: #E8E8EC;
+  }
+  tr:nth-child(even) {
+    background: #151935;
   }
   .exercise-num {
     display: inline-block;
@@ -65,19 +88,6 @@ style: |
 **14 February 2026** | Globe Tower, BGC
 
 Copy-paste ready CLI prompts for every exercise
-
----
-
-# Get the Workshop Prompts
-
-## Scan to open on your phone
-
-![w:300 center](qr_code.png)
-
-**realmindsai.github.io/gdg-dslu-philippines**
-
-All exercises, prompts, and hackathon options in one place.
-Browse on your phone while you code on your laptop.
 
 ---
 
